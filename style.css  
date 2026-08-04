@@ -1,0 +1,280 @@
+/* Réinitialisation */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+body{
+
+    background:#f8f4ef;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+/* En-tête */
+
+header{
+
+    background:#d35400;
+
+    color:white;
+
+    padding:20px;
+
+    text-align:center;
+
+}
+
+nav{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:15px;
+
+    flex-wrap:wrap;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#ffe082;
+
+}
+
+/* Bannière */
+
+.hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:40px;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero img{
+
+    width:450px;
+
+    max-width:100%;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 15px rgba(0,0,0,.2);
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+/* Cartes des recettes */
+
+.recettes{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    padding:40px 20px;
+
+}
+
+.carte{
+
+    background:white;
+
+    width:300px;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.carte:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.carte img{
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+}
+
+.carte h3{
+
+    padding:15px;
+
+    color:#d35400;
+
+}
+
+.carte p{
+
+    padding:0 15px 20px;
+
+}
+
+/* Contact */
+
+.contact{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    padding:40px;
+
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    width:320px;
+
+}
+
+input,
+
+textarea{
+
+    padding:12px;
+
+    margin-bottom:15px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+}
+
+button{
+
+    background:#d35400;
+
+    color:white;
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#b84300;
+
+}
+
+/* Pied de page */
+
+footer{
+
+    background:#333;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.contact{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+nav{
+
+    flex-direction:column;
+    gap: 10px;
+} 
+.conteneur{
+    max-width:  1200px;
+    margin:  40px auto;
+    padding:  20px;
+}
